@@ -1,0 +1,87 @@
+<svg width="1000" height="430" viewBox="0 0 1000 430" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="core" cx="50%" cy="48%" r="55%">
+      <stop offset="0%" stop-color="#fff7a8"/>
+      <stop offset="18%" stop-color="#ffe600"/>
+      <stop offset="40%" stop-color="#ff8a00"/>
+      <stop offset="70%" stop-color="#7f00ff"/>
+      <stop offset="100%" stop-color="#050014"/>
+    </radialGradient>
+    <linearGradient id="neon" x1="105" y1="55" x2="895" y2="365" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00f5ff"/>
+      <stop offset="0.48" stop-color="#ff2bd6"/>
+      <stop offset="1" stop-color="#ffe600"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0.35  0 1 0 0 0.95  0 0 1 0 1  0 0 0 1 0"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="textGlow" x="-20%" y="-30%" width="140%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
+      <path d="M 42 0 L 0 0 0 42" stroke="#00f5ff" stroke-opacity="0.12" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1000" height="430" rx="28" fill="#050014"/>
+  <rect width="1000" height="430" rx="28" fill="url(#grid)"/>
+  <rect x="12" y="12" width="976" height="406" rx="22" stroke="url(#neon)" stroke-width="3" opacity="0.85"/>
+
+  <g opacity="0.65">
+    <path d="M52 326 C210 260 240 172 380 146 C545 115 628 220 785 151 C856 120 915 76 956 42" stroke="#00f5ff" stroke-width="2" stroke-dasharray="10 14">
+      <animate attributeName="stroke-dashoffset" from="0" to="-96" dur="3s" repeatCount="indefinite"/>
+    </path>
+    <path d="M40 376 C180 315 287 350 414 276 C560 191 627 80 834 102 C892 108 940 124 974 147" stroke="#ff2bd6" stroke-width="2" stroke-dasharray="8 18">
+      <animate attributeName="stroke-dashoffset" from="0" to="104" dur="3.4s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <g transform="translate(500 220)" filter="url(#glow)">
+    <circle r="128" fill="url(#core)" opacity="0.78">
+      <animate attributeName="r" values="118;132;118" dur="2.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.62;0.88;0.62" dur="2.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="168" stroke="#ffe600" stroke-width="4" stroke-dasharray="32 18" opacity="0.82">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="8s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="204" stroke="#00f5ff" stroke-width="3" stroke-dasharray="12 20" opacity="0.72">
+      <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="11s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="240" stroke="#ff2bd6" stroke-width="2" stroke-dasharray="4 24" opacity="0.68">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="14s" repeatCount="indefinite"/>
+    </circle>
+
+    <g opacity="0.9">
+      <path d="M-24 -190 L-7 -82 L-58 -14 L-18 -28 L-37 94 L28 -46 L-14 -34 L45 -190 Z" fill="#ffe600">
+        <animate attributeName="opacity" values="0.45;1;0.45" dur="1.25s" repeatCount="indefinite"/>
+      </path>
+      <path d="M112 -160 L88 -72 L125 -22 L93 -33 L70 72 L144 -48 L112 -39 L164 -160 Z" fill="#00f5ff">
+        <animate attributeName="opacity" values="1;0.42;1" dur="1.6s" repeatCount="indefinite"/>
+      </path>
+      <path d="M-142 -132 L-108 -61 L-151 -14 L-119 -24 L-95 83 L-174 -34 L-139 -30 L-194 -132 Z" fill="#ff2bd6">
+        <animate attributeName="opacity" values="0.55;1;0.55" dur="1.45s" repeatCount="indefinite"/>
+      </path>
+    </g>
+  </g>
+
+  <g filter="url(#textGlow)">
+    <text x="500" y="218" text-anchor="middle" font-family="Orbitron, Rajdhani, Arial Black, sans-serif" font-size="64" font-weight="900" fill="#ffffff" letter-spacing="4">SPUERSAIYAN</text>
+    <text x="500" y="264" text-anchor="middle" font-family="Rajdhani, Arial, sans-serif" font-size="22" font-weight="700" fill="#00f5ff" letter-spacing="8">NEON LIMIT BREAK</text>
+  </g>
+
+  <g opacity="0.8">
+    <rect x="72" y="72" width="132" height="7" fill="#00f5ff"/>
+    <rect x="72" y="92" width="86" height="7" fill="#ff2bd6"/>
+    <rect x="796" y="348" width="132" height="7" fill="#ffe600"/>
+    <rect x="842" y="328" width="86" height="7" fill="#00f5ff"/>
+  </g>
+</svg>
