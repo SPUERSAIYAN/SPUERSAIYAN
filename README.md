@@ -2,6 +2,8 @@
 
 ![SPUERSAIYAN Neon Aura](./assets/neon-saiyan-aura.svg)
 
+<img src="./assets/pixel-saiyan.svg" width="190" alt="Pixel Saiyan energy mascot" />
+
 <img
   src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=26&pause=900&color=00F5FF&center=true&vCenter=true&width=720&lines=CYBER+NEON+MODE+ONLINE;SAIYAN+ENERGY+FIELD+CHARGING;POWER+LEVEL+RISING"
   alt="Cyber neon typing effect"
